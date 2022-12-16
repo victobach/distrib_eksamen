@@ -1,0 +1,15 @@
+{
+  "authentication": {
+    "options": {
+      "userName": "CloudSA8cc549ee",
+      "password": "Iliketurtles1"
+    },
+    "type": "default"
+  },
+  "server": "ezchat.database.windows.net",
+  "options": {
+    "database": "ezchat",
+    "encrypt": true,
+    "trustServerCertificate": false
+  }
+}
