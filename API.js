@@ -14,9 +14,6 @@ module.exports = app.listen(PORT, () => {
 
 // Middleware
 app.use(express.json());
-app.use(formData.parse({ uploadDir: "./images" }));
-app.use("/images", express.static("images"));
-app.use("/", express.static("Views"));
 
 // DB connection
 async function connectToDb() {
