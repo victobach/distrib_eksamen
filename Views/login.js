@@ -65,8 +65,9 @@ document
           );
         }
       });
+
+      //creates session
       if (loginOK) {
-        //creates session
         await fetch("http://localhost:8000/session", {
           method: "POST",
           headers: {
@@ -77,7 +78,7 @@ document
           if (res.status == 200) {
             //saves session in localstorage
             localStorage.setItem("sessionData", JSON.stringify(session));
-            location.href = "/index.html";
+            location.href = "/frontpage.html";
           } else {
             window.alert("couldn't create session");
           }
